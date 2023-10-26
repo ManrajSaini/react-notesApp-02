@@ -37,3 +37,4 @@ The Notes App is a simple web application built to help you create, read, edit, 
 ## Technologies Used
 - **React:** A JavaScript library for building user interfaces.
 - **UUID:** Used to generate unique IDs for each todo item.
+- **Local Storage:** for data persitance.
