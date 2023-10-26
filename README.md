@@ -2,7 +2,8 @@
 
 The Notes App is a simple web application built to help you create, read, edit, and delete notes. It leverages local storage to save your notes, ensuring you can access them even after closing the app.
 
-![Notes App Screenshot]((image.png))
+![image](https://github.com/ManrajSaini/react-notesApp-02/assets/86542773/581cb440-3ab9-4da1-b1f1-00a804b986a3)
+
 
 ## Features
 
