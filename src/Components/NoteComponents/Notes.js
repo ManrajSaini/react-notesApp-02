@@ -13,10 +13,11 @@ const Notes = () => {
     const [notes, setNotes] = useState([]);
     const [inputText, setInputText] = useState("");
 
+    
     const textHandler = (e) => {
         setInputText(e.target.value);
     }
-
+    
     const saveHandler = () => {
         setNotes((oldNotes) => [
             ...oldNotes,
@@ -25,17 +26,31 @@ const Notes = () => {
                 text: inputText
             }
         ]);
-
+        
         setInputText("");
     }
-
+    
     const deleteHandler = (noteId) => {
         const filteredNotes = notes.filter(
             (note) => note.id !== noteId
         );
-
+            
         setNotes(filteredNotes);
     }
+        
+    useEffect(() => {
+        const data = JSON.parse(localStorage.getItem("Notes"));
+
+        if(data && data.length > 0 ){
+            setNotes(data);
+        }
+
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem("Notes", JSON.stringify(notes));
+    }, [notes]);
+    
 
     return (
         <div className='notes'>
