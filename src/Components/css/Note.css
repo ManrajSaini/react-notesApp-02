@@ -12,7 +12,7 @@
     justify-content: space-between;
     word-wrap: break-word;
     font-family: 'Lora', serif;
-    font-size: medium;
+    font-size: 20px;
 }
 
 .note__footer {
@@ -56,11 +56,11 @@
     color: #4b1589;
 }
 
-.note__delete {
+.note__delete, .note__edit {
     cursor: pointer;
 }
 
-.note__delete:hover {
+.note__delete, .note__edit:hover {
     transform: scale(1.1);
 }
 

@@ -37,6 +37,14 @@ const Notes = () => {
             
         setNotes(filteredNotes);
     }
+
+    const editHandler = (noteId, updatedText) => {
+        const updatedNotes = notes.map((note) => 
+            note.id === noteId ? {...note, text: updatedText} : note
+        );
+
+        setNotes(updatedNotes);
+    }
         
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem("Notes"));
@@ -59,6 +67,7 @@ const Notes = () => {
                     key={note.id}
                     id={note.id}
                     text={note.text}
+                    editHandler={editHandler}
                     deleteHandler={deleteHandler}
                 />
             ))}    

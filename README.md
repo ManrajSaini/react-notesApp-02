@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Notes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Notes App is a simple web application built to help you create, read, edit, and delete notes. It leverages local storage to save your notes, ensuring you can access them even after closing the app.
 
-## Available Scripts
+![Notes App Screenshot]((image.png))
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Create Notes**: Easily add new notes with titles and content.
+- **Read Notes**: View your notes with titles and content.
+- **Edit Notes**: Modify existing notes by changing their content.
+- **Delete Notes**: Remove notes you no longer need.
+- **Local Storage**: Your notes are saved in your browser's local storage for persistence across sessions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Creating a New Note**:
+   - Click the "Create Note" button.
+   - Provide a title and content for your new note.
+   - Click "Save" to create the note.
 
-### `npm test`
+2. **Reading a Note**:
+   - Click on an existing note to view its title and content.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Editing a Note**:
+   - To edit a note, click the "Edit" button on the note.
+   - Modify the note's content.
+   - Click "Save" to save your changes.
 
-### `npm run build`
+4. **Deleting a Note**:
+   - To delete a note, click the "Delete" button on the note.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Local Storage
+- The Notes App uses your browser's local storage to save your notes. This means your notes will be available even after closing the app or refreshing the page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used
+- **React:** A JavaScript library for building user interfaces.
+- **UUID:** Used to generate unique IDs for each todo item.
